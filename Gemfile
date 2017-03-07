@@ -9,6 +9,9 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 gem 'devise'
+gem 'carrierwave'
+gem 'mini_magick'
+
 # Use postgresql as the database for Active Recordp
 gem 'pg', '~> 0.18'
 # Use Puma as the app server

@@ -22,7 +22,9 @@ class ProductsController < ApplicationController
   end
 
   def Agregar
-    
+      pro= Product.find(product_params.id)
+      car= Cart.find_by(user_id: current_user.id, open: true)
+      Order.create(product_id: product_params.id, user_id: current_user.id, price: pro.price, cart_id: car.id)
   end
   # POST /products
   # POST /products.json
